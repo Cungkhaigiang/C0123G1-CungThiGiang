@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simpleform</title>
+</head>
+    <body>
+        <!-- CĂN CHỈNH MÀU VÀ CHỮ-->
+        <form action=" http://demo.codegym.vn/6/registration_form/register.php">
+           <fieldset>
+            <legend > SỞ THÍCH CỦA BẠN</legend>
+            <form method="get">
+                Họ Và Tên:
+                <input type="text" name="Yourname"><br>
+                <br>
+            </form> 
+            <form method="post">
+                Email:
+               <input type="email" name="email"><br>
+               <br>
+               Sở thích:
+               <input type="checkbox" name="hobby" value="sport"> Thể Thao
+               <input type="checkbox" name="hobby" value="sport"> Âm nhạc
+               <input type="checkbox" name="hobby" value="sport"> Đọc sách<br>
+               <input type="checkbox" name="hobby" value="sport"> Lướt Web
+               <input type="checkbox" name="hobby" value="sport"> Chơi game
+               <input type="checkbox" name="hobby" value="sport"> Điện ảnh<br>
+               <input type="checkbox" name="hobby" value="sport"> Du lịch<br>
+               <br>
+               <input type="submit" value="Gửi thông tin">
+               <input type="reset" value="Nhập lại">
+            </form>         
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>ĐĂNG NHẬP HỌC VIÊN</legend>
+            <form method="get">
+                Họ Và Tên
+                <input type="text" name="Yourname"><br>
+                <br>
+            </form>
+            <form method="post">
+                Ngày Sinh
+                <input type="text" name="Dateofbirth"><br>
+                <br>
+                Giới tính
+                <input type="radio" name="gender" value="male">Nam
+                <input type="radio" name="gender" value="female" >Nữ    
+                <br><br>
+               
+                Địa Chỉ
+                <textarea cols="50" rows="4"></textarea>
+                 <br><br>
+                Lớp 
+                <select name="chọn lớp">
+                    <option value="A1">A1</option>
+                    <option value="A2"> A2</option>
+                    <option value="A3">A3</option>
+                    <option value="A4">A4</option>
+                </select>
+                <br><br>
+                Email
+                <input type="email" name="email"><br>
+                <br>
+                Điện Thoại
+                <input type="phonenumber" name="phonenumber"><br>
+                <br>
+                <input type="submit" value="Đăng kí">
+                <input type="reset" value="Nhập lại">
+
+
+               </form>
+        </fieldset>
+        </form>
+      
+    </body>
+</html>

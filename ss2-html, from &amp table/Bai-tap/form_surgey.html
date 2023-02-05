@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tạo form lấy survey khách hàng</title>
+    </head>
+    <body>
+        <h2>Market Research Survey</h2>
+        <p>Please take a few moments to complete this satisfaction survey</p>
+       <hr>
+       <h4>What is your age range?</h4>
+       <select name="age">        
+         <option value="18-24">18-24</option>
+         <option value="25-34">25-34</option>
+         <option value="35-50">35-50</option>
+         <option value="50+">50+</option>
+       </select>
+       <h4>What is your yearly income range?</h4>
+       <select name="income">        
+         <option value="$0-$25,000">$0-$25,000</option>
+         <option value="$25,001-$50,000">$25,001-$50,000</option>
+         <option value="$50,001-$100,000">$50,001-$100,000</option>
+         <option value="$100,000+">$100,000+</option>
+      </select>
+      <h4> Gender identity</h4>
+      <label><input type="radio" name="sex" value="male" checked/>Male</label><br>
+      <br>
+      <label><input type="radio" name="sex" value="female"/>Female</label><br>
+      <br>
+      <label><input type="radio" name="sex" value=" nonbinary"/>Nonbinary</label><br>
+      <br>
+      <label> <input type="radio" name="sex" value="Other"/>Other<br>
+               <input type="text" name="other" > </label>
+               <br>
+             
+        <h4>Which of the following products have your purchased in the last 2 months. Please check all addly.</h4>
+        <label><input type="checkbox" name="product" value="Product1"/> Product 1</label><br>
+        <br>
+        <label><input type="checkbox" name="product" value="Product2"/>Product 2</label><br>
+        <br>
+        <label><input type="checkbox" name="product" value="Product3"/>Product 3</label><br>
+        <br>
+        <h4>How often would you use our new product?</h4>
+        <input type="radio" name="useproduct" value="daily" checked/>Daily <br>
+        <br>
+        <input type="radio" name="useproduct" value="weekly" />Weekly <br>
+        <br>
+        <input type="radio" name="useproduct" value="monthly" />Monthly <br>
+        <br>
+        <h4>what would you pay for the new product</h4>
+         $<input type="text" name="Dollars"/>       
+         .<input type="text" name="Cents"/>
+         <p>Dollars</p>
+         <p>Cents</p>
+
+    </body>
+</html>
