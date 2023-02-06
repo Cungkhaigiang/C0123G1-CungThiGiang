@@ -3,75 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>simpleform</title>
+    <style>
+        body{
+            width: 700px;
+            height: 1400px;
+        }
+        h3{
+            text-align: center;
+        }
+        #address{
+            height:60px;
+            width: 220px;
+        }
+        .heading{
+            color:rgb(22, 74, 196) ;
+        }
+        .tb-input{
+            color:coral;
+        }
+
+    </style>
 </head>
     <body>
-        <!-- CĂN CHỈNH MÀU VÀ CHỮ-->
-        <form action=" http://demo.codegym.vn/6/registration_form/register.php">
+        <form action=" http://demo.codegym.vn/6/registration_form/register.php" method="post">
            <fieldset>
-            <legend > SỞ THÍCH CỦA BẠN</legend>
-            <form method="get">
-                Họ Và Tên:
+            <h3 style="color:azure;background:rgb(230, 79, 15)"> SỞ THÍCH CỦA BẠN</h3>
+               <label class="heading" for="fullName">Họ và Tên:</label>
                 <input type="text" name="Yourname"><br>
                 <br>
-            </form> 
-            <form method="post">
-                Email:
-               <input type="email" name="email"><br>
+                <label class="heading" for="email">Email:</label>
+                <input type="email" name="email"><br>
+                <br>
+               <label class="heading" for="interest">Sở Thích:</label>
+            <p class="tb-input">
+               <input  type="checkbox" name="hobby" value="Thể thao"> Thể Thao
+               <input  type="checkbox" name="hobby" value="Âm nhạc"> Âm nhạc
+               <input  type="checkbox" name="hobby" value="Đọc sách"> Đọc sách<br>
+               <input  type="checkbox" name="hobby" value="Lướt web"> Lướt Web
+               <input  type="checkbox" name="hobby" value="Chơi game"> Chơi game
+               <input  type="checkbox" name="hobby" value="Điện ảnh"> Điện ảnh<br>
+               <input  type="checkbox" name="hobby" value="Du lịch"> Du lịch<br>
+            </p>
                <br>
-               Sở thích:
-               <input type="checkbox" name="hobby" value="sport"> Thể Thao
-               <input type="checkbox" name="hobby" value="sport"> Âm nhạc
-               <input type="checkbox" name="hobby" value="sport"> Đọc sách<br>
-               <input type="checkbox" name="hobby" value="sport"> Lướt Web
-               <input type="checkbox" name="hobby" value="sport"> Chơi game
-               <input type="checkbox" name="hobby" value="sport"> Điện ảnh<br>
-               <input type="checkbox" name="hobby" value="sport"> Du lịch<br>
-               <br>
-               <input type="submit" value="Gửi thông tin">
-               <input type="reset" value="Nhập lại">
-            </form>         
-        </fieldset>
+               <button type="submit">Gửi thông tin</button>
+               <button type="reset">Nhập lại</button>
+            </fieldset>
+        </form>       
         <br><br>
-        <fieldset>
-            <legend>ĐĂNG NHẬP HỌC VIÊN</legend>
-            <form method="get">
-                Họ Và Tên
+        <div style="background-color:rgb(248, 175, 148);">
+        <form action=" http://demo.codegym.vn/6/registration_form/register.php" method="post">
+           <fieldset>
+               <h3 style="color:rgb(23, 59, 201);background:rgb(26, 201, 224)">ĐĂNG NHẬP HỌC VIÊN</h3>
+                <label class="heading" for="fullname">Họ và Tên:</label>
                 <input type="text" name="Yourname"><br>
                 <br>
-            </form>
-            <form method="post">
-                Ngày Sinh
-                <input type="text" name="Dateofbirth"><br>
+                <label class="heading" for="Date of birth">Ngày sinh:</label>
+                <input type="text" name="Date of birth"><br>
                 <br>
-                Giới tính
+                <label class="heading" for="gender">Giới tính:</label>
                 <input type="radio" name="gender" value="male">Nam
-                <input type="radio" name="gender" value="female" >Nữ    
+                <input type="radio" name="gender" value="female">Nữ    
                 <br><br>
-               
-                Địa Chỉ
-                <textarea cols="50" rows="4"></textarea>
+                <label class="heading" for="address"> Địa chỉ:</label>
+                <input id="address" type="text" name="address">
+                <!-- <textarea cols="50" rows="4"></textarea> -->
                  <br><br>
-                Lớp 
-                <select name="chọn lớp">
+                <label class="heading" for="class">Lớp:</label>
+                <select name="class">
                     <option value="A1">A1</option>
-                    <option value="A2"> A2</option>
+                    <option value="A2">A2</option>
                     <option value="A3">A3</option>
                     <option value="A4">A4</option>
                 </select>
                 <br><br>
-                Email
+                <label class="heading" for="email">Email:</label>
                 <input type="email" name="email"><br>
                 <br>
-                Điện Thoại
+                <label class="heading" for="phonenumber">Điện Thoại:</label>
                 <input type="phonenumber" name="phonenumber"><br>
                 <br>
-                <input type="submit" value="Đăng kí">
-                <input type="reset" value="Nhập lại">
-
-
-               </form>
-        </fieldset>
-        </form>
-      
+                <button type="submit">Gửi thông tin</button>
+               <button type="reset">Nhập lại</button>
+            </fieldset>
+        </form> 
+    </div>
     </body>
 </html>
