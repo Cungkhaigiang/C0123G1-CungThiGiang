@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ứng Dụng Máy Tính</title>
+</head>
+<body>
+    <form>
+    <input id="firstnumb" type="number">
+    <input id="lastnumb"  type="number">
+    <br><br>
+    <button type="button" onclick="mathAdd()"> Addition(+)</button>
+    <button type="button" onclick="mathSub()">Subtraction(-)</button>
+    <button type="button" onclick="mathMulti()">Multiplication(X)</button>
+    <button type="button" onclick="mathDiv()">Division(/)</button>
+    <h3>Result:</h3>
+    <div id="Result"></div>
+    </form>
+</body>
+<script>
+    function mathAdd(){
+     let a = document.getElementById("firstnumb").value;
+     let b = document.getElementById("lastnumb").value;
+     let Result = Number(a) + Number(b);
+
+     document.getElementById("Result").innerHTML = Result;
+    }
+    function mathSub(){
+     let a = document.getElementById("firstnumb").value;
+     let b = document.getElementById("lastnumb").value;
+     let Result = Number(a) - Number(b);
+
+     document.getElementById("Result").innerHTML = Result;
+    }
+    function mathMulti(){
+     let a = document.getElementById("firstnumb").value;
+     let b = document.getElementById("lastnumb").value;
+     let Result = Number(a) * Number(b);
+
+     document.getElementById("Result").innerHTML = Result;
+    }
+    function mathDiv(){
+     let a = document.getElementById("firstnumb").value;
+     let b = document.getElementById("lastnumb").value;
+     let Result = Number(a) / Number(b);
+
+     document.getElementById("Result").innerHTML = Result;
+    }
+
+</script>
+</html>
