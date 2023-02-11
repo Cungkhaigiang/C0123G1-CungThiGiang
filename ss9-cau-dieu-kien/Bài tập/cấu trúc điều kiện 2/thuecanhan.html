@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Tính tiền thuế dựa theo thu nhận cá nhân</h2>
+    <p>Mức thu nhập của bạn: </p>
+    <input type="text" id="income" placeholder="Triệu">
+    <button onclick="check()">Tính Toán</button>
+    <p id="result"></p>
+    <script>
+        function check(){
+            let income=document.getElementById("income").value;
+            let position;
+
+           switch(income){
+                case income<=5:
+                   position= (income*5)/100;
+                   break;
+                case income<=10:
+                    position=(income*10)/100;
+                    break;
+                case income<=18:
+                    position= (income*15)/100;
+                    break;
+                case income<=32:
+                    position= (income*20)/100;
+                    break;
+                case income<=52:
+                    position=(income*25)/100;
+                    break;
+                case income<=80:
+                    position=(income*30)/100;
+                    break;
+                default:
+                    position=(income*35)/100;
+           }
+           document.getElementById("result").innerHTML="Số thuế bạn cần nộp là:"+' '+position+' '+"Triệu VND";
+        }
+
+
+    </script>
+</body>
+</html>

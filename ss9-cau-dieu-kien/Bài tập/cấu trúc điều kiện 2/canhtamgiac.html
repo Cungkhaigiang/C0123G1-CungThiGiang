@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điều kiện 3 cạnh là một tam giác</title>
+</head>
+<!-- bug -->
+<body>
+    <h3>Điều kiện 3 cạnh là một tam giác</h3>
+    Cạnh A:
+    <input type="text" id="A">
+    <br><br>
+    Cạnh B:
+    <input type="text" id="B">
+    <br><br>
+    Cạnh C:
+    <input type="text" id="C">
+    <br><br>
+    <button type="button" onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+    <script>
+     function check(){
+        let edgeA= document.getElementById("A").value;
+        let edgeB= document.getElementById("B").value;
+        let edgeC= document.getElementById("C").value;
+        let x1= edgeA+edgeB;
+        let x2= edgeA+edgeC;
+        let x3= edgeB+edgeC;
+        if(edgeA>0 && edgeB>0 && edgeC>0){
+            if(x1>edgeC){
+                result="Ba cạnh này là một tam giác";
+            }else if(x3>edgeA){
+                result="Ba cạnh này là một tam giác";
+            }else if(x2>edgeB){
+                result="Ba cạnh này là một tam giác";
+            }else{
+                result="Ba cạnh này không phải là một tam giác";
+            }
+        }else{
+             result="Ba cạnh này không phải là một tam giác";
+        }
+        //    if(x1>edgeC && x2>edgeB && x3>edgeA){
+        //     result="Ba cạnh này là một tam giác";
+        //    }else{
+        //     result="Ba cạnh này không phải là một tam giác";
+        //    }
+        // }else{
+        //     result="Ba cạnh này không phải là một tam giác";
+        // }
+      document.getElementById("result").innerHTML=result;
+    }         
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let elecConsum =prompt("nhap so dien tieu thu(kwh)");
+    let elecBill;
+    switch (elecConsum){
+        case elecConsum<50:
+            elecBill=elecConsum*1.678;
+            document.write("Tien dien thang nay la:"+ elecBill +' '+ "VND");
+            break;
+        case elecConsum<100:
+            elecBill=elecConsum*1.734;
+             document.write("Tien dien thang nay la:"+ elecBill +' '+ "VND");
+            break;
+        case elecConsum<200:
+             elecBill= elecConsum*2.014;
+             document.write("Tien dien thang nay la:"+ elecBill +' '+ "VND");
+             break;
+        case elecConsum<300:
+             elecBill=elecConsum*2.536;
+             document.write("Tien dien thang nay la:"+ elecBill +' '+ "VND");
+            break;
+        case elecConsum<400:
+             elecBill=elecConsum*2.834;
+             document.write("Tien dien thang nay la:"+ elecBill +' '+ "VND");
+            break;
+        default:
+             elecBill=elecConsum*2.972;
+             document.write("Tien dien thang nay la:"+ elecBill +' '+ "VND");
+            break;
+    }
+
+
+    </script>
+</body>
+</html>

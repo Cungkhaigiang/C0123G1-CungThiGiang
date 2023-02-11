@@ -6,29 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!-- bug -->
 <body>
     <h3>Giải phương trình bậc 2</h3>
     <p>Hệ số a</p>
-    <input type="text" id="coefficientA">
+    <input type="text" id="numbA">
     <p>Hệ số b</p>
-    <input type="text" id="coefficientB">
+    <input type="text" id="numbB">
     <br><br>
     <p>Hệ số c</p>
-    <input type="text" id="coefficientC">
+    <input type="text" id="numbC">
+    <br><br>
     <button type="button" onclick="check()">Kiểm tra</button>
     <p id="result"></p>
     <script>
      function check(){
         let root1,root2;
         let result;
-        let coefficientA=document.getElementById("coefficientA").value;
-        let coefficientB=document.getElementById("coefficientB").value;
-        let coefficientC=document.getElementById("coefficientC").value;
-        let discriminant=Math.pow(coefficientB,2)-4*Number(coefficientA)*Number(coefficientC);
+        let numbA=document.getElementById("numbA").value;
+        let numbB=document.getElementById("numbB").value;
+        let numbC=document.getElementById("numbC").value;
+        let discriminant=numbB*numbB-4*numbA*numbC;
         if (discriminant > 0) {
-    root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-    root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+           root1 = ((-numbB) + Math.sqrt(discriminant)) / (2 * numbA);
+           root2 = ((-numbB) - Math.sqrt(discriminant)) / (2 * numbA);
+           result = "Phuong trinh bac 2 co 2 nghiem: " + root1+' '+"và"+' '+root2;
+        }else if(discriminant== 0){
+            root1= root2=(-numbB/(2*numbA)); 
+
+            result = " Phuong trinh co nghiem kep la:" +' '+ root1;
+        }else{
+            result="Phương trình có vô số nghiệm";
         }
+        document.getElementById("result").innerHTML=result;
     }
-</body>
+    </script>
+    </body>
 </html>
