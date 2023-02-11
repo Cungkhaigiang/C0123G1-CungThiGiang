@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển từ mét sang feet</title>
+</head>
+<body>
+    <h3>Chuyển từ mét sang feet:</h3>
+    <p>Số mét:</p>
+    <input type="text" id="meter">
+    <button onclick="feet()">Chuyển sang feet</button>
+    <p id="result"></p>
+    <script>
+        function feet(){
+       let meter= document.getElementById("meter").value;
+       let feet;
+
+       feet=meter*3.2808;
+document.getElementById("result").innerHTML="Feet bằng:"+ ' '+ feet;
+        }
+    </script>
+</body>
+</html>

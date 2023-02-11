@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- cần sửa -->
+<body>
+   <h3>Tìm giá trị lớn nhất của ba số nguyên</h3> 
+    A:<input type="number" id="numb1">
+    <br><br>
+    B:<input type="number" id="numb2">
+    <br><br>
+    C:<input type="number" id="numb3">
+    <br><br>
+    <button onclick="fundNumb()">Tìm số lớn nhất</button>
+    <p id="result"></p>
+  <script>
+   function fundNumb(){
+    let numb1 = document.getElementById('numb1').value;
+    let numb2 = document.getElementById('numb2').value;
+    let numb3 = document.getElementById('numb3').value;
+    let result;
+      if(numb1>numb2){
+        if(numb1>numb3){
+          result=numb1+' '+'Giá trị lớn nhất';
+        }else{
+          result=numb3+' '+'Giá trị lớn nhất';
+        }
+      }
+      else {
+        if(numb2>numb3){
+        result=numb2+' '+'Giá trị lớn nhất';
+      }else{
+        result=numb3+' '+'Giá trị lớn nhất';
+      }}
+document.getElementById("result").innerHTML=result;
+   }  
+
+  </script>
+</body>
+</html>

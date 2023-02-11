@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Tính hoa hồng nhận được tùy theo mức doanh Số</h3>
+    <p>Tổng doanh số bán hàng</p>
+    <input type="number" id="sales" name="number" >
+    <br><br>
+    <button onclick="check()" id="result">Tổng số hoa hồng</button>
+    <p id="total"></p>
+    <script>
+        function check(){
+            let totalSales=document.getElementById("sales").value;
+            let numbRose;
+            if(totalSales<=100){
+                numbRose= (Number(totalSales)*5)/100;
+            }else if(100<totalSales<=300){
+                numbRose=(Number(totalSales)*10)/100;
+            }else if(numbRose>300){
+                numbRose=(Number(totalSales)*20)/100;
+            }
+            document.getElementById("total").innerHTML="Hoa Hồng nhận được theo mức doanh số là:" + numbRose;
+        }
+    </script>
+</body>
+</html>

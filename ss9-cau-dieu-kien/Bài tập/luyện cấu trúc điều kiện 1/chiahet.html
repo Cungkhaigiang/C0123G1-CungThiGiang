@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra a chia hết cho b</title>
+</head>
+<body> 
+    <h3>Kiểm tra a có chia hết cho b</h3>
+    <p> Số A:</p>
+    <input type="number" id="a" placeholder="Nhập a">
+    <p>Số B:</p>
+    <input type="number" id="b" placeholder="Nhập b">
+    <br><br>
+    <button  onclick="kiemTra()">Kết quả</button>
+    <p id="result"></p>
+    <script>
+        function kiemTra(){
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            let result1 ;
+             if(a % b ===0){
+                result1 = (a +' '+'Chia hết cho'+' '+ b);
+             }else{
+                result1 = (a +' '+'Không chia hết cho'+' '+ b);
+             }
+             document.getElementById("result").innerHTML= result1;
+        }
+    
+    </script>
+</body>
+</html>

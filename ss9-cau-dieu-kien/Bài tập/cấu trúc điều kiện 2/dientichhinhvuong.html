@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính diên tích hình vuông</title>
+</head>
+<body>
+    <h3>Tính diên tích hình vuông khi biết cạnh a</h3>
+    <p>Cạnh a bằng:</p>
+    <input type="text" id="adge">
+    <button onclick="square()">Diện tích Hình vuông</button>
+    <p id="result"></p>
+    <script>
+        function square(){
+        let adge=document.getElementById("adge").value;
+        let areaSquare;
+         
+                 areaSquare= adge*adge;
+        document.getElementById("result").innerHTML= "Diện tích hình vuông là:"+' '+areaSquare;
+    }
+
+
+    </script>
+</body>
+</html>

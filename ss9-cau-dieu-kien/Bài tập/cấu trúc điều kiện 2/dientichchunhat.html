@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diện tích hình vuông</title>
+</head>
+<body>
+    <h3>Diện tích hình vuông</h3>
+    Cạnh a:
+    <input type="text" id="length">
+    <br><br>
+    Cạnh b:
+    <input type="text" id="width">
+    <br><br>
+    <button type="button" onclick="rectangle()">Diện tích</button>
+    <p id="result"></p>
+    <script>
+     function rectangle(){
+        let length=document.getElementById("length").value;
+        let width= document.getElementById("width").value;
+        let acreage;
+           acreage= length*width;
+        document.getElementById("result").innerHTML="Diện tích hình chữ nhật là:"+' '+acreage;
+     }
+
+
+    </script>
+</body>
+</html>

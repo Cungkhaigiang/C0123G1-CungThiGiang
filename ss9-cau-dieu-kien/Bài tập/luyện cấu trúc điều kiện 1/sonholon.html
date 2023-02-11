@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Kiểm tra số lớn hay nhỏ hơn 0</h3>
+    <p>Số cần kiểm tra:</p>
+    <input type="number" id="numb" placeholder="Nhập Số">
+    <br><br>
+    <button onclick="kiemTra()">Kiểm tra số</button>
+    <p id="result"></p>
+  <script>
+  function kiemTra(){
+    let numb = document.getElementById('numb').value;
+    let result1;
+      if(numb>0) {
+        result1= ('Số:'+' '+ numb +' '+ 'Lớn hơn 0');
+      }else{
+        result1= ('Số:'+' '+ numb +' '+ 'Nhỏ hơn 0');
+      }  
+      document.getElementById('result').innerHTML = result1;     
+    }
+  </script>
+    
+</body>
+</html>

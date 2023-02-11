@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Tính cước điện thoại của hộ gia đình</h3>
+    <p>Số phút đã sử dụng</p>
+    <input type="text" id="timeNumber">
+    <button onclick="check()">Check</button>
+    <p id="result"></p>
+   <script>
+     function check(){
+        let timeNumber= document.getElementById('timeNumber').value;
+        let fixedCharge=25;
+        let fee;
+        if(timeNumber>200){
+            fee= (timeNumber-200)*200+150*400+50*600;
+        }else if(timeNumber>50){
+            fee=(timeNumber-50)*400+50*600;    
+        }else{
+            fee=timeNumber*600;
+        }
+        let total=0.01*fee+fixedCharge;
+       document.getElementById("result").innerHTML="Tổng số tiền bạn phải nộp là:"+' '+ total;
+     }
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Giải phương trình bậc 2</h3>
+    <p>Hệ số a</p>
+    <input type="text" id="coefficientA">
+    <p>Hệ số b</p>
+    <input type="text" id="coefficientB">
+    <br><br>
+    <p>Hệ số c</p>
+    <input type="text" id="coefficientC">
+    <button type="button" onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+    <script>
+     function check(){
+        let root1,root2;
+        let result;
+        let coefficientA=document.getElementById("coefficientA").value;
+        let coefficientB=document.getElementById("coefficientB").value;
+        let coefficientC=document.getElementById("coefficientC").value;
+        let discriminant=Math.pow(coefficientB,2)-4*Number(coefficientA)*Number(coefficientC);
+        if (discriminant > 0) {
+    root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        }
+    }
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học sinh đủ điều kiện vào lớp 10</title>
+</head>
+<body>
+     <h3>Xem tuổi học sinh có đủ điều kiện vào lớp 10</h3>
+     <p>Số tuổi:</p>
+     <input type="number" id="old" name="old" placeholder="Nhập Tuổi">
+     <br><br>
+     <button onclick="kiemTra()">Kiểm Tra Tuổi</button>
+     <p id="result"></p>
+     <script>
+    function kiemTra(){
+        let old = document.getElementById('old').value;
+        let result1;
+        if (old >=15){
+            result1 = ('Tuổi:'+ old +' '+ ',Em đủ tuổi để vào lớp 10');
+        }else{
+            result1 = ('Tuổi'+ old +' '+ ',Em không đủ tuổi để học lớp 10');
+        }
+        document.getElementById('result').innerHTML= result1;
+        } 
+     </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>Điểm trung bình của học sinh</h3>
+<p>Điểm kiểm tra</p>
+<input type="text" id="Testmarks">
+<p>Điểm giữa kì</p>
+<input type="text" id="midtermscore">
+<p>Điểm cuối kì</p>
+<input type="text" id="endpoint">
+<br><br>
+<button onclick="check()" id="result">Kiểm tra</button>
+<p id="ratings"></p>
+<script>
+ function check(){
+    let Testmarks= document.getElementById("Testmarks").value;
+    let midtermscore= document.getElementById("midtermscore").value;
+    let endpoint= document.getElementById("endpoint").value;
+    let mediumscore= (Number(Testmarks) + Number(midtermscore)+ Number(endpoint))/3;
+    
+    if(mediumscore>=9.0){
+       result= ("Hạng A:tổng điểm"+ ' '+ mediumscore)
+    }else if(9.0>mediumscore>=7.0){
+        result= ("Hạng B:tổng diểm"+ ' '+ mediumscore)
+    }else if(7.0>mediumscore>=5.0){
+        result=  ("Hạng C:tổng điểm"+ ' '+ mediumscore)
+    }else{
+        result= ("Hạng D:tổng điểm"+ ' '+ mediumscore)
+    }
+    document.getElementById("ratings").innerHTML=result;
+ }
+
+</script>
+</body>
+</html>

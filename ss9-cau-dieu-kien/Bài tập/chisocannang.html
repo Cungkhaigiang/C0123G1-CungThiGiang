@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Tính chỉ số cân nặng</h3>
+    <p>Nhập cân nặng: (kg)</p>
+    <input type="text" id="weight">
+    <br>
+    <p>Nhập chiều cao:(m)</p>
+    <input type="text" id="height">
+    <br><br>
+    <button type="button" onclick="check()">Kiểm tra</button>
+    <br>
+    <p id="index"></p>
+    <script>
+    function check(){
+        let weight=document.getElementById("weight").value;
+        let height=document.getElementById("height").value;
+        let bmi= Number(weight)/Math.pow(height,2);
+        let result;
+      if(bmi<18.5){
+        result=('Chỉ số BMI là:'+' '+ bmi);
+      }
+      else if(18.5<=bmi<25.0){
+        result=('Chỉ số BMI là:'+' ' + bmi);
+      }else if(25.0<=bmi<30.0){
+        result=('Chỉ số BMI là:'+' ' + bmi);
+      }else{
+        result=('Chỉ số BMI là:'+' ' + bmi);
+      }
+      document.getElementById("index").innerHTML=result;
+    }
+    </script>
+    
+</body>
+</html>

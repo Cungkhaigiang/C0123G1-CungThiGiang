@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kiểm tra số ngày trong tháng</h2>
+    <input type="number" id="month" placeholder="Nhập số tháng">
+    <button type="button" onclick="check()">Check</button>
+    <br><br>
+    <p id="result">Đây là chỗ hiển thị kết quả</p>
+    <script>
+     function check() {  
+        let January ="1";
+        let February ="2";
+        let March ="3";
+        let April ="4";
+        let May ="5";
+        let June ="6";
+        let July ="7;"
+        let August ="8";
+        let September ="9";
+        let October ="10";
+        let November ="11";
+        let December ="12";
+        
+        let month = document.getElementById("month").value;
+       
+        switch (month) {
+            case July:
+            case January:
+            case March:
+            case May:
+            case August:
+            case October:
+            case December:
+     document.getElementById("result").innerHTML='Tháng:'+ ' '+ month + ' '+'Có 31 ngày';
+            break;
+            case April:
+            case June:
+            case September:
+            case November:
+    document.getElementById("result").innerHTML='Tháng:'+ ' '+ month + ' '+'Có 30 ngày';
+             break;
+            case February:
+    document.getElementById("result").innerHTML='Tháng:'+ ' '+ month + ' '+'Có 28 hoặc 29 ngày';
+             break;
+            default:
+        document.getElementById("result").innerHTML= 'Vui lòng nhập lại';
+     }
+    }
+    </script>
+</body>
+</html>

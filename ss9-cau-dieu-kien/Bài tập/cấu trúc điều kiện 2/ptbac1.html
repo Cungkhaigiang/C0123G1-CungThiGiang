@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Giải phương trình bậc 1</h3>
+    <p>Hệ số a</p>
+    <input type="text" id="coefficient1">
+    <p>Hệ số b</p>
+    <input type="text" id="coefficient2">
+    <br><br>
+    <button type="button" onclick="check()">Kiểm tra</button>
+    <p id="result"></p>
+    <script>
+     function check(){
+        let coefficient1=document.getElementById("coefficient1").value;
+        let coefficient2= document.getElementById("coefficient2").value;
+        let result;
+       if(coefficient1==0){
+        if(coefficient2==0){
+            result="Phương trình:"+coefficient1+'x'+' + '+coefficient2+' '+"Vô số nguyệm ";
+        }else{
+            result="Phương trình:"+coefficient1+'x'+' + '+coefficient2+' '+"Vô nguyệm ";
+        }
+       }else{
+        result="Phương trình:"+coefficient1+'x'+' + '+coefficient2+'có 1 nghiệm là: '+' '+(-coefficient2/coefficient1);
+       }
+
+document.getElementById("result").innerHTML= result;
+
+     }
+
+
+    </script>
+</body>
+</html>
