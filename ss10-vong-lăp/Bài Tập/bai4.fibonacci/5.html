@@ -8,10 +8,17 @@
 </head>
 <body>
     <script>
-        for(let i=1; i<100; i++){
-             document.write(i+ "<br>");
+            let f0=0;
+            let f1=1;
+            let fn=1;
+            let n;
+            for( let fn =1; n<2; fn++){
+                fn= f0+ f1;
+                f0=f1;
+                f1=fn;
+             console.log(fn)
             }
-            alert("Đã hoàn thành");
+            
     </script>
 </body>
 </html>
