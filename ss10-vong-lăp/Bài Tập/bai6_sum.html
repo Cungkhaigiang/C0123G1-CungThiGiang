@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Tổng 30 số đầu tiên chia hết cho 7 là:</h3>
+    <script>
+    let i=1;
+    let content=0;
+    let sum=0;
+    do{
+        if(i%7===0){
+        sum +=i;
+        content++;
+        }
+        i++;
+    }while(content<30);
+    document.write(sum);
+    </script>
+</body>
+</html>
