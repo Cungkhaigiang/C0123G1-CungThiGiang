@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="a" onclick="check()">Bắt đầu</button>
+    <script>
+     function check(){
+      let count=0;
+       while(count<3){  
+        let doanSo= +prompt("Bạn đoán số lớn nhất nằm khoảng bao nhiêu");
+        let soDoan= +prompt("Nhập số bạn đoán:");
+        let chosen=Math.floor(Math.random()*doanSo);
+        if(soDoan===chosen){
+            alert("Bạn đã chọn đúng số");
+        }else if(soDoan< chosen){
+           alert("Số bạn đoán bé hơn ") 
+        }else{
+            alert("Số bạn đoán lớn hơn")
+        }  
+          count++;
+        }
+        document.getElementById("a").innerHTML="Bạn đã hết lượt";
+  }    
+      
+    </script>
+</body>
+</html>
