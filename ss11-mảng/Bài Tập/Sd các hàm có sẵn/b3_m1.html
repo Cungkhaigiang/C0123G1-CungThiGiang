@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let numb1=[12,22,24,23,13,15,14,1,2,4]
+           let max=numb1[0]; 
+           let count=0;
+            for(let a of numb1){
+                count+=a;
+            }
+            for(i=1; i< numb1.length; i++){
+               if(numb1[i] >max){
+                max=numb1[i];
+            }
+        }
+            document.write("Số lớn nhất là:" + max + "<br>")
+        document.write("Trung bình cộng các số trên là:"+count/numb1.length)
+            
+      
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numb1=[2,4,34,23,45,12,18]
+        let max=numb1[0]; 
+        let count=0;
+        for(i=1; i< numb1.length; i++){
+            if(numb1[i] >max){
+               max=numb1[i];
+               count=i+1;  
+            }
+        }
+        document.write("Số lớn nhất là:"+' '+ max +' '
+        +"vị trí tương ứng của nó trong dãy là:" + ' '+ count);
+    </script>
+</body>
+</html>
