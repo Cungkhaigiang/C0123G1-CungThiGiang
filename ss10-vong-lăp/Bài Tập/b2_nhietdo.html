@@ -9,14 +9,22 @@
 <body>
     <script>
        let temperature= +prompt("Nhiệt độ hiện tại của bạn là bao nhiêu?");
-          while(temperature>100){
-              document.write("Yêu cầu bạn giảm nhiệt độ");
-              break; 
-          }
-          while(temperature<20){
-               document.write("Yêu cần bạn tăng nhiệt độ");
+
+          while(temperature>0){
+            if(temperature<20){
+               alert("Yêu cần bạn tăng nhiệt độ");
                break;
-          }
+            }
+            else if(temperature>100){
+                alert("Yêu cầu bạn giảm nhiệt độ");
+                break;
+            }else{
+                alert("nhiệt độ hiện tại của bạn là" + ' ' +temperature);
+                break;
+            }
+        }
+         
+          
     </script>    
 </body>
 </html>
