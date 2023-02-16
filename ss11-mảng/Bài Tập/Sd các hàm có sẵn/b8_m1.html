@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr = [6,2,5,12,45,4,34,7,34,13]
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] > arr[i]) {
+                let x = arr[i];//gán số bé hơn
+                //console.log(x)
+                arr[i] = arr[j];//gán số lớn hơn cho i để so sánh
+                //console.log(arr[i])
+                "sao gán giá trị nhỏ nhất cho arrj?";
+                 arr[j] = x;//gán số bé nhất quay lại j(j 1 vòng luôn thay đổi)
+               // console.log(arr[j])
+            } 
+        }
+    }
+   // console.log(arr);
+ document.write(arr);
+
+      
+    </script>
+</body>
+</html>

@@ -10,25 +10,19 @@
     <p>Tìm từ tôi muốn:</p>
     <input type="text" id="nhaptu" placeholder="Nhập từ">
     <button onclick="check()">Dịch</button>
-    
+    <p id="viet"></p>
     <script>
-        let a= document.getElementById("nhaptu").value;
         function check(){
              let conscious1=['Orange',' apple', 'guava','banana']
              let conscious2= ['Cam',' Táo', 'Ôỉ', 'Chuối'] 
-
-             for(i=0; i< conscious1.length; i++ ){
-                for(j=0; j< conscious2.length; j++){
+             let a= document.getElementById("nhaptu").value;
+             let result=0;
+             for( i=0; i< conscious1.length; i++ ){
                     if(a===conscious1[i]){
-                        console.log(conscious1[i])
-                    }else if(a===){
-
+                         document.getElementById("viet").innerHTML= conscious2[i];
+                      }
                     }
                 }
-             }
-                
-        }
-   
     </script>
 </body>
 </html>
