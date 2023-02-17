@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let arr1=[3,5,2,8,-3,7,8]
+        let arr2=[7,12,6,9,20,56,89]
+        let arr3=[]
+        let arr4= [0,0,0,0,0,0]
+    function minArray(arr){
+        let min= arr[0];//gan phan tu dau tien trong mang la min de so sanh
+        for(var i =1; i<arr.length; i++){//kiem tra tung phan tu tprng mang de so sanh
+            if(arr[i]<min){
+            min= arr[i];
+            }
+        }
+    return min;
+    } 
+    let min = minArray(arr1);//truyen tham so mang vao function(ham)
+    alert(min);//hien thi mang
+    </script>
+</body>
+</html>

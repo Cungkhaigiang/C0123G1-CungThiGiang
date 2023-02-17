@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bán kính đường tròn<input type="text" id="input" oninput="calculate()" />
+    <br><br>
+    Diện tích đường tròn:<span id="result1"></span>
+    <br><br>
+    Chu vi hình tròn:<span id="result2"></span>
+    <script>
+        function circre(number) {
+            result1 = Math.pow(number, 2) * 3.14;
+            result2 = number * 2 * 3.14;
+            return result1, result2;
+
+        }
+        function calculate() {
+            let input = document.getElementById("input").value;
+            let result = circre(input);
+            document.getElementById("result1").innerHTML = result1;
+            document.getElementById("result2").innerHTML = result2;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

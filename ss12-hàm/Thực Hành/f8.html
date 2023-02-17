@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = [[5,10], [15,20,25,30],[45,50]];
+console.log(x[1][3] + x[2][1] + x[0][0]);
+        //k giới hạn kiểu dữ liệu+ tất cả tính chất cảu dữ liệu
+        //1 biến làm tham số chỉ sử dụng đc trong function-tính private(riêng tư)
+        //đối tượng arguments:k định nghĩa biến thì arguments được thay thế,chỉ đc định nghĩa trong hàm;
+        function writeLog(){//trpng hàm gọi là tham số
+          //param là tham số,duyệt qua từng phần tử trong mảng arguments
+          //chạy số lần bằng số element 
+          var myString=[];
+             for(var param of arguments){
+                   myString+=`${param} -`
+             }
+             console.log(myString)
+        }
+
+writeLog("test message",'test2','log3');//đối số
+
+    </script>
+</body>
+</html>

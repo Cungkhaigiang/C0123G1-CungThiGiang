@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <label>Nhập Số:</label>
+   <input type="text" id="input" />
+   <button type="button" onclick="numb1()">Nhấn</button>
+   <p id="result"></p>
+   <script>
+      function numb1(number) {
+         // result =0;
+         number = +document.getElementById("input").value;//nhận giá trị input
+         //result= number+1;
+         return document.getElementById("result").innerHTML = number += 1;
+      }
+
+   </script>
+</body>
+
+</html>

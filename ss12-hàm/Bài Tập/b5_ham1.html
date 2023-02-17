@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let nameA = prompt("Nhập tên ngôi sao:")
+        function findName(name) {
+            let nameN = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+            let nameS = ['Ursa-Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa-Major', 'Leo'];
+            let result="";
+            for (i = 0; i < nameN.length; i++) {
+                if (nameN[i] === name) {
+                    result = nameS[i];
+                    break;//đk trên đúng mới thoát if
+                }else{
+                    result = ("Không có kết quả ngôi sao");
+                }
+            }
+         document.getElementById("result").innerHTML = result;
+           
+        }
+        findName(nameA);
+    </script>
+</body>
+
+</html>
